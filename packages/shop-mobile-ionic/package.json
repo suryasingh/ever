@@ -65,8 +65,6 @@
 		"@angular/pwa": "^0.801.3",
 		"@angular/router": "^8.0.0",
 		"@angular/service-worker": "^8.0.0",
-		"@ever-platform/common": "file:../common",
-		"@ever-platform/common-angular": "file:../common-angular",
 		"@ionic-native/barcode-scanner": "^5.11.0",
 		"@ionic-native/call-number": "^5.11.0",
 		"@ionic-native/camera": "^5.11.0",
