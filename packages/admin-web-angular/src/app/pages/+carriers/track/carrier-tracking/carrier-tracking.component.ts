@@ -21,7 +21,7 @@ import { WarehousesService } from '@app/@core/data/warehouses.service';
 import Carrier from '@modules/server.common/entities/Carrier';
 import { ICarrierCreateObject } from '@modules/server.common/interfaces/ICarrier';
 import { takeUntil } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 declare var google: any;
 const directionsDisplay = new google.maps.DirectionsRenderer();

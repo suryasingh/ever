@@ -19,7 +19,7 @@ import { ToasterService } from 'angular2-toaster';
 import { ChartsPanelComponent } from '../charts-panel.component';
 import { Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 @Component({
 	selector: 'ea-chart-panel-header',

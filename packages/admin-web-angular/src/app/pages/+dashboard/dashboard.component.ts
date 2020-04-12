@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { DashboardInfoViewModel } from '@app/models/DashboardInfoViewModel';
 import { IExistingCustomersViewModel } from '@app/models/IExistingCustomersViewModel';
 import { takeUntil } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 @Component({
 	selector: 'ea-dashboard',

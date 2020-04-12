@@ -13,7 +13,7 @@ import { Subject, forkJoin, Observable } from 'rxjs';
 import { RedirectNameComponent } from '../../render-component/name-redirect/name-redirect.component';
 import { TranslateService } from '@ngx-translate/core';
 import { takeUntil } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 @Component({
 	selector: 'ea-customer-warehouses-table',

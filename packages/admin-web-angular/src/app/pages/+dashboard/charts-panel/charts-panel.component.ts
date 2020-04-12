@@ -18,7 +18,7 @@ import { PeriodsService } from '@app/@core/services/dashboard/periods.service';
 import { DashboardLoadingIndicatorState } from '@app/models/DashboardLoadingIndicatorState';
 import { toDate } from '@modules/server.common/utils';
 import { takeUntil } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 interface IOrdersChartModel {
 	total: any;

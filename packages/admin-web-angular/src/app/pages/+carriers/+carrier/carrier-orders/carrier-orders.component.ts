@@ -27,7 +27,7 @@ import GeoLocation from '@modules/server.common/entities/GeoLocation';
 import { StoreOrderComponent } from '@app/@shared/render-component/carrier-orders-table/store-order.component';
 import { UserOrderComponent } from '@app/@shared/render-component/carrier-orders-table/user-order-component';
 import { takeUntil } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 const perPage = 3;
 let searchCustomer: boolean;

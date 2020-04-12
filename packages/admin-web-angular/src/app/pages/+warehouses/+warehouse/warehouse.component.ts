@@ -31,7 +31,7 @@ import { WarehouseOrdersService } from '@app/@core/data/warehouseOrders.service'
 import { StatusComponent } from '@app/@shared/render-component/warehouse-table/status/status.component';
 import { Subject, forkJoin, Observable } from 'rxjs';
 import { takeUntil, first } from 'rxjs/operators';
-import 'rxjs/add/operator/takeUntil';
+
 
 const perPage = 3;
 
