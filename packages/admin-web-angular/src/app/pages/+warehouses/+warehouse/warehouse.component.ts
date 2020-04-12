@@ -104,7 +104,7 @@ export class WarehouseComponent implements OnDestroy, AfterViewInit, OnChanges {
 		);
 
 		(modalRef.componentInstance as WarehouseOrderComponent).orderFinishedEmitter
-			.takeUntil(this.ngDestroy$)
+			.pipe(takeUntil(this.ngDestroy$))
 			.subscribe(() => {
 				modalRef.close();
 			});

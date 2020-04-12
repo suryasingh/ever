@@ -68,7 +68,7 @@ export class WarehouseOrdersTableComponent
 		);
 
 		(modalRef.componentInstance as WarehouseOrderComponent).orderFinishedEmitter
-			.takeUntil(this._ngDestroy$)
+			.pipe(takeUntil(this._ngDestroy$))
 			.subscribe(() => {
 				modalRef.close();
 			});

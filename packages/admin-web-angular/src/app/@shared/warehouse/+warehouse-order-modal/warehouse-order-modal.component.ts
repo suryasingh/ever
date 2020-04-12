@@ -255,7 +255,9 @@ export class WarehouseOrderModalComponent implements OnInit, OnDestroy {
 						childInstance: WarehouseOrderInputComponent
 					) => {
 						childInstance.amount
-							.takeUntil(this._ngDestroy$)
+							.pipe(
+								takeUntil(this._ngDestroy$)
+							)
 							.subscribe((count) => {
 								const wProduct = this._orderProducts.find(
 									({ productId }) =>

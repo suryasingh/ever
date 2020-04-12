@@ -135,7 +135,9 @@ export class CustomerWarehousesTableComponent
 	}
 
 	private _loadDataSmartTable() {
-		this.sourceEvent.takeUntil(this._ngDestroy$).subscribe((rawSource) => {
+		this.sourceEvent.pipe(
+			takeUntil(this._ngDestroy$)
+		).subscribe((rawSource) => {
 			this.sourceSmartTable.load(rawSource);
 		});
 	}

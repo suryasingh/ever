@@ -68,12 +68,12 @@ export class CarrierTrackingComponent implements OnInit, OnDestroy {
 	getCarriers() {
 		this._storesService
 			.getStores()
-			.takeUntil(this.ngDestroy$)
+			.pipe(takeUntil(this.ngDestroy$))
 			.subscribe((stores) => {
 				this.stores = stores;
 				this.carriersService
 					.getAllCarriers()
-					.takeUntil(this.ngDestroy$)
+					.pipe(takeUntil(this.ngDestroy$))
 					.subscribe((carriers) => {
 						this.carriers = carriers.filter(
 							(carrier) => carrier.status === 0

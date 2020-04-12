@@ -2447,7 +2447,7 @@ export class ChartsPanelComponent implements OnInit, OnDestroy {
 
 	private _listenLangChange() {
 		this._translateService.onLangChange
-			.takeUntil(this._ngDestroy$)
+			.pipe(takeUntil(this._ngDestroy$))
 			.subscribe(() => {
 				this._refreshChartData();
 				this._setChartsSummary();

@@ -287,7 +287,7 @@ export class CarrierOrdersComponent
 								valuePrepareFunction: (_, order: Order) => {
 									let warehouseStat = 'BAD_STATUS';
 									getTranslate(order.warehouseStatusText)
-										.takeUntil(this.ngDestroy$)
+										.pipe(takeUntil(this.ngDestroy$))
 										.subscribe((y) => {
 											warehouseStat = y;
 										});
@@ -301,7 +301,7 @@ export class CarrierOrdersComponent
 								valuePrepareFunction: (_, order: Order) => {
 									let carrierStat = 'No Status';
 									getTranslate(order.carrierStatusText)
-										.takeUntil(this.ngDestroy$)
+										.pipe(takeUntil(this.ngDestroy$))
 										.subscribe((y) => {
 											carrierStat = y;
 										});
